@@ -1,0 +1,22 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "context.version": "2.0.0",
+      "context.action": "support",
+      "context.domain": "beckn.one:deg:ev-charging",
+      "message.refId": "order-001",
+      "message.support.name": "Ravi Kumar",
+      "message.support.phone": "+91-9876543210",
+      "message.support.email": "",
+      "message.support.address": null,
+      "message.support.emptyList": [],
+      "message.support.emptyDict": {}
+    }
+  }
+}
+

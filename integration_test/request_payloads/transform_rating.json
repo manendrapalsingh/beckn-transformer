@@ -1,0 +1,37 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "schema.context.version": "2.0.0",
+      "schema.context.action": "rating",
+      "schema.context.domain": "beckn.one:deg:ev-charging",
+      "schema.context.bpp_id": "example-bpp.com",
+      "schema.context.bpp_uri": "https://example-bpp.com/pilot/bap/energy/v2",
+      "schema.context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.message_id": "89ee20fe-b592-48b0-a5c5-e38f6b90e569",
+      "schema.context.timestamp": "2025-01-27T12:00:00Z",
+      "schema.context.ttl": "PT30S",
+      "schema.context.bap_id": "example-bap.com",
+      "schema.context.bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+      "schema.message.ratings[0].@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+      "schema.message.ratings[0].@type": "beckn:RatingInput",
+      "schema.message.ratings[0].beckn:id": "fulfillment-001",
+      "schema.message.ratings[0].beckn:ratingValue": 4,
+      "schema.message.ratings[0].beckn:bestRating": 5,
+      "schema.message.ratings[0].beckn:worstRating": 1,
+      "schema.message.ratings[0].beckn:category": "FULFILLMENT",
+      "schema.message.ratings[0].beckn:feedback.comments": "Excellent charging experience! The station was clean, easy to find, and the charging was fast and reliable. The staff was helpful and the payment process was smooth.",
+      "schema.message.ratings[0].beckn:feedback.tags[0]": "fast-charging",
+      "schema.message.ratings[0].beckn:feedback.tags[1]": "easy-to-use",
+      "schema.message.ratings[0].beckn:feedback.tags[2]": "clean-station",
+      "schema.message.ratings[0].beckn:feedback.tags[3]": "helpful-staff",
+      "schema.message.ratings[0].beckn:feedback.tags[4]": "smooth-payment",
+      "path": "Example-schemas/15_rating/ev-charging-rating.json",
+      "name": "ev-charging-rating"
+    }
+  }
+}

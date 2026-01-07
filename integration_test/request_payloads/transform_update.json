@@ -1,0 +1,25 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "context.version": "2.0.0",
+      "context.action": "update",
+      "context.domain": "beckn.one:deg:ev-charging",
+      "context.bap_id": "example-bap.com",
+      "context.bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+      "context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "context.message_id": "h8lim93-96m2-1h78-gk1l-1j2j6k8h0k79",
+      "context.timestamp": "2025-01-27T10:20:00Z",
+      "context.ttl": "PT30S",
+      "message.order.id": "order-ev-charging-001",
+      "message.order.state": "ACTIVE",
+      "message.order.fulfillment.state.descriptor.code": "ACTIVE",
+      "message.order.fulfillment.start.location.gps": "12.9716,77.5946"
+    }
+  }
+}
+

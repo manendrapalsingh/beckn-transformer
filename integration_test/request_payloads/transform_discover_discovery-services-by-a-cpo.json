@@ -1,0 +1,31 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "schema.context.version": "2.0.0",
+      "schema.context.action": "discover",
+      "schema.context.domain": "beckn.one:deg:ev-charging",
+      "schema.context.bap_id": "app.example.com",
+      "schema.context.bap_uri": "https://app.example.com/bap",
+      "schema.context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.message_id": "a1eabf26-29f5-4a01-9d4e-4c5c9d1a3d02",
+      "schema.context.timestamp": "2025-10-14T07:31:00Z",
+      "schema.context.ttl": "PT30S",
+      "schema.context.schema_context[0]": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/EvChargingService/v1/context.jsonld",
+      "schema.message.filters.type": "jsonpath",
+      "schema.message.filters.expression": "$[?(@.beckn:provider.beckn:id == 'ecopower-charging')]",
+      "schema.message.spatial[0].op": "s_dwithin",
+      "schema.message.spatial[0].targets": "$['beckn:itemAttributes.chargingStation.serviceLocation.geo']",
+      "schema.message.spatial[0].geometry.type": "Point",
+      "schema.message.spatial[0].geometry.coordinates[0]": 77.59,
+      "schema.message.spatial[0].geometry.coordinates[1]": 12.94,
+      "schema.message.spatial[0].distanceMeters": 10000,
+      "path": "Example-schemas/01_discover/discovery-services-by-a-cpo.json",
+      "name": "discovery-services-by-a-cpo"
+    }
+  }
+}

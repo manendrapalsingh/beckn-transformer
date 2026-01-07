@@ -1,0 +1,20 @@
+{
+  "result": {
+    "path": "Example-schemas/21_publish/ev-charging-catalog-publish.json",
+    "name": "ev-charging-catalog-publish",
+    "schema": {
+      "context": {
+        "version": "2.0.0",
+        "action": "catalog_publish",
+        "domain": "beckn.one:deg:ev-charging",
+        "timestamp": "2025-12-19T10:05:00Z",
+        "message_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+        "transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+        "bpp_id": "example-bpp.com",
+        "bpp_uri": "https://example-bpp.com/pilot/bap/energy/v2",
+        "ttl": "PT30S"
+      }
+    }
+  },
+  "schema_used": null
+}

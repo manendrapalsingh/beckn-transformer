@@ -1,0 +1,76 @@
+{
+  "result": {
+    "path": "Example-schemas/14_02_on_update/ev-charging-completed-on_update.json",
+    "name": "ev-charging-completed-on_update",
+    "schema": {
+      "context": {
+        "version": "2.0.0",
+        "action": "on_update",
+        "domain": "beckn.one:deg:ev-charging",
+        "bap_id": "example-bap.com",
+        "bap_uri": "https://example-bap.com/pilot/bap/energy/v2",
+        "transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+        "message_id": "32f67afe-3d8c-4faa-bc2e-93b0791dcb02",
+        "timestamp": "2025-01-27T11:45:00Z",
+        "ttl": "PT30S",
+        "bpp_id": "example-bpp.com",
+        "bpp_uri": "https://example-bpp.com/pilot/bpp/energy/v2"
+      },
+      "message": {
+        "order": {
+          "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+          "@type": "beckn:Order",
+          "beckn:id": "order-ev-charging-001",
+          "beckn:orderStatus": "COMPLETED",
+          "beckn:seller": "cpo1.com",
+          "beckn:buyer": {
+            "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+            "@type": "beckn:Buyer",
+            "beckn:id": "user-123",
+            "beckn:role": "BUYER",
+            "beckn:displayName": "Ravi Kumar",
+            "beckn:telephone": "+91-9876543210",
+            "beckn:email": "ravi.kumar@example.com",
+            "beckn:taxID": "GSTIN29ABCDE1234F1Z5",
+            "beckn:buyerAttributes": {
+              "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/PaymentSettlement/v1/context.jsonld",
+              "@type": "BuyerPaymentInfo",
+              "vpa": "ravikumar@upi"
+            }
+          },
+          "beckn:orderValue": {
+            "currency": "INR",
+            "value": 143.95
+          },
+          "beckn:fulfillment": {
+            "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+            "@type": "beckn:Fulfillment",
+            "beckn:id": "fulfillment-001",
+            "beckn:mode": "RESERVATION",
+            "beckn:deliveryAttributes": {
+              "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/EvChargingSession/v1/context.jsonld",
+              "@type": "ChargingSession",
+              "sessionStatus": "COMPLETED"
+            }
+          },
+          "beckn:payment": {
+            "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+            "@type": "beckn:Payment",
+            "beckn:id": "payment-123e4567-e89b-12d3-a456-426614174000",
+            "beckn:amount": {
+              "currency": "INR",
+              "value": 143.95
+            },
+            "beckn:paymentURL": "https://payments.bluechargenet-aggregator.io/pay?transaction_id=$transaction_id&amount=$amount",
+            "beckn:txnRef": "TXN-123456789",
+            "beckn:paidAt": "2025-12-19T10:05:00Z",
+            "beckn:beneficiary": "BPP",
+            "beckn:paymentStatus": "COMPLETED",
+            "beckn:upiTransactionId": "UPI123456789012"
+          }
+        }
+      }
+    }
+  },
+  "schema_used": null
+}

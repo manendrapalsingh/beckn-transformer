@@ -1,0 +1,13 @@
+# Minimal requirements that should work with Python 3.14
+# If pydantic fails, try installing packages individually
+
+# Core dependencies
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+
+# Pydantic - try latest version first
+# If this fails, you may need Python 3.12 or 3.13
+pydantic>=2.10.0
+

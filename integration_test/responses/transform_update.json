@@ -1,0 +1,34 @@
+{
+  "result": {
+    "context": {
+      "version": "2.0.0",
+      "action": "update",
+      "domain": "beckn.one:deg:ev-charging",
+      "transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "message_id": "h8lim93-96m2-1h78-gk1l-1j2j6k8h0k79",
+      "timestamp": "2025-01-27T10:20:00Z",
+      "ttl": "PT30S",
+      "bap_id": "example-bap.com",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2"
+    },
+    "message": {
+      "order": {
+        "id": "order-ev-charging-001",
+        "state": "ACTIVE",
+        "fulfillment": {
+          "state": {
+            "descriptor": {
+              "code": "ACTIVE"
+            }
+          },
+          "start": {
+            "location": {
+              "gps": "12.9716,77.5946"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schema_used": "ev-charging-stop-update"
+}

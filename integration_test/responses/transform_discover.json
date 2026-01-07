@@ -1,0 +1,19 @@
+{
+  "result": {
+    "context": {
+      "version": "2.0.0",
+      "action": "discover",
+      "domain": "beckn.one:deg:ev-charging",
+      "bap_id": "example-bap.com",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+      "transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "message_id": "a1eabf26-29f5-4a01-9d4e-4c5c9d1a3d02",
+      "timestamp": "2025-01-27T10:00:00Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "text_search": "EV charger fast charging"
+    }
+  },
+  "schema_used": "discovery-by-QR"
+}

@@ -1,0 +1,8 @@
+{
+  "method": "GET",
+  "endpoint": "/health",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+

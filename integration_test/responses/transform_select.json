@@ -1,0 +1,52 @@
+{
+  "result": {
+    "path": "Example-schemas/03_select/ev-charging-select.json",
+    "name": "ev-charging-select",
+    "schema": {
+      "context": {
+        "version": "2.0.0",
+        "action": "select",
+        "domain": "beckn.one:deg:ev-charging",
+        "timestamp": "2024-01-15T10:30:00Z",
+        "message_id": "bb9f86db-9a3d-4e9c-8c11-81c8f1a7b901",
+        "transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+        "bap_id": "example-bap.com",
+        "bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+        "bpp_id": "example-bpp.com",
+        "bpp_uri": "https://example-bpp.com/pilot/bap/energy/v2",
+        "ttl": "PT30S"
+      },
+      "message": {
+        "order": {
+          "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+          "@type": "beckn:Order",
+          "beckn:orderStatus": "CREATED",
+          "beckn:seller": "ecopower-charging",
+          "beckn:buyer": {
+            "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/draft/schema/core/v2/context.jsonld",
+            "@type": "beckn:Buyer",
+            "beckn:id": "user-123",
+            "beckn:role": "BUYER",
+            "beckn:displayName": "Ravi Kumar",
+            "beckn:telephone": "+91-9876543210",
+            "beckn:email": "ravi.kumar@example.com",
+            "beckn:taxID": "GSTIN29ABCDE1234F1Z5"
+          },
+          "beckn:orderAttributes": {
+            "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/EvChargingSession/v1/context.jsonld",
+            "@type": "ChargingSession",
+            "buyerFinderFee": {
+              "feeType": "PERCENTAGE",
+              "feeValue": 2.5
+            },
+            "preferences": {
+              "startTime": "2026-01-04T08:00:00+05:30",
+              "endTime": "2026-01-04T20:00:00+05:30"
+            }
+          }
+        }
+      }
+    }
+  },
+  "schema_used": null
+}

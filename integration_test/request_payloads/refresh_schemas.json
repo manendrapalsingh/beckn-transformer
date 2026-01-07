@@ -1,0 +1,8 @@
+{
+  "method": "POST",
+  "endpoint": "/refresh-schemas",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+

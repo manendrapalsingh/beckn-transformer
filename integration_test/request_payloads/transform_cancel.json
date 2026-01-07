@@ -1,0 +1,39 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "schema.context.version": "2.0.0",
+      "schema.context.domain": "beckn.one:deg:ev-charging",
+      "schema.context.action": "cancel",
+      "schema.context.bap_id": "example-bap.com",
+      "schema.context.bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+      "schema.context.bpp_id": "example-bpp.com",
+      "schema.context.bpp_uri": "https://example-bpp.com/pilot/bpp/energy/v2",
+      "schema.context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.message_id": "4a736341-8897-4e5a-9873-53533691f42d",
+      "schema.context.timestamp": "2025-01-27T12:15:30Z",
+      "schema.context.ttl": "PT30S",
+      "schema.message.order[0].@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+      "schema.message.order[0].@type": "beckn:Order",
+      "schema.message.order[0].beckn:id": "order-ev-charging-001",
+      "schema.message.order[0].beckn:orderStatus": "CONFIRMED",
+      "schema.message.order[0].beckn:seller": "cpo1.com",
+      "schema.message.order[0].beckn:buyer.@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/core/v2/context.jsonld",
+      "schema.message.order[0].beckn:buyer.@type": "beckn:Buyer",
+      "schema.message.order[0].beckn:buyer.beckn:id": "user-123",
+      "schema.message.order[0].beckn:buyer.beckn:buyerAttributes.@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/main/schema/PaymentSettlement/v1/context.jsonld",
+      "schema.message.order[0].beckn:buyer.beckn:buyerAttributes.@type": "BuyerPaymentInfo",
+      "schema.message.order[0].beckn:buyer.beckn:buyerAttributes.vpa": "ravikumar@upi",
+      "schema.message.order[0].beckn:orderItems[0].beckn:orderedItem": "IND*ecopower-charging*cs-01*IN*ECO*BTM*01*CCS2*A*CCS2-A",
+      "schema.message.order[0].beckn:orderItems[0].beckn:quantity.unitText": "Kilowatt Hour",
+      "schema.message.order[0].beckn:orderItems[0].beckn:quantity.unitCode": "KWH",
+      "schema.message.order[0].beckn:orderItems[0].beckn:quantity.unitQuantity": 2.5,
+      "path": "Example-schemas/19_cancel/cancel-a-reserved-slot.json",
+      "name": "cancel-a-reserved-slot"
+    }
+  }
+}

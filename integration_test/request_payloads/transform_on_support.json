@@ -1,0 +1,33 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "schema.context.version": "2.0.0",
+      "schema.context.action": "on_support",
+      "schema.context.domain": "beckn.one:deg:ev-charging",
+      "schema.context.bap_id": "example-bap.com",
+      "schema.context.bap_uri": "https://example-bap.com/pilot/bap/energy/v2",
+      "schema.context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.message_id": "dee432d9-36c9-4146-ad21-2f5bcac9b6a9",
+      "schema.context.timestamp": "2025-01-27T12:15:30Z",
+      "schema.context.ttl": "PT30S",
+      "schema.context.bpp_id": "example-bpp.com",
+      "schema.context.bpp_uri": "https://example-bpp.com/pilot/bpp/energy/v2",
+      "schema.message.support.name": "BlueCharge Support Team",
+      "schema.message.support.phone": "18001080",
+      "schema.message.support.email": "support@bluechargenet-aggregator.io",
+      "schema.message.support.url": "https://support.bluechargenet-aggregator.io/ticket/SUP-20250730-001",
+      "schema.message.support.hours": "Mon–Sun 24/7 IST",
+      "schema.message.support.channels[0]": "PHONE",
+      "schema.message.support.channels[1]": "EMAIL",
+      "schema.message.support.channels[2]": "WEB",
+      "schema.message.support.channels[3]": "CHAT",
+      "path": "Example-schemas/18_on_support/ev-charging-on_support.json",
+      "name": "ev-charging-on_support"
+    }
+  }
+}

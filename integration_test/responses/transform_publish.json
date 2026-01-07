@@ -1,0 +1,26 @@
+{
+  "result": {
+    "context": {
+      "version": "2.0.0",
+      "action": "publish",
+      "domain": "beckn.one:deg:ev-charging",
+      "bap_id": "example-bap.com",
+      "bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+      "transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "message_id": "r8vwss93-96w2-1r78-qu1v-1t2t6u8r0u79",
+      "timestamp": "2025-01-27T10:45:00Z",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "catalog": {
+        "@context": "https://becknprotocol.io/specifications/core/v0/schema/catalog",
+        "@type": "beckn:Catalog",
+        "descriptor": {
+          "name": "EV Charging Catalog",
+          "short_desc": "EV Charging Services"
+        }
+      }
+    }
+  },
+  "schema_used": null
+}

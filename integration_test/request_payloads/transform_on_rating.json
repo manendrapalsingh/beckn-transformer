@@ -1,0 +1,28 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "schema.context.version": "2.0.0",
+      "schema.context.action": "on_rating",
+      "schema.context.domain": "beckn.one:deg:ev-charging",
+      "schema.context.bap_id": "example-bap.com",
+      "schema.context.bap_uri": "https://example-bap.com/pilot/bap/energy/v2",
+      "schema.context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.message_id": "89ee20fe-b592-48b0-a5c5-e38f6b90e569",
+      "schema.context.timestamp": "2025-01-27T12:00:30Z",
+      "schema.context.ttl": "PT30S",
+      "schema.context.bpp_id": "example-bpp.com",
+      "schema.context.bpp_uri": "https://example-bpp.com/pilot/bpp/energy/v2",
+      "schema.message.received": true,
+      "schema.message.feedbackForm.url": "https://example-bpp.com/feedback/portal",
+      "schema.message.feedbackForm.mime_type": "application/xml",
+      "schema.message.feedbackForm.submission_id": "feedback-123e4567-e89b-12d3-a456-426614174000",
+      "path": "Example-schemas/16_on_rating/ev-charging-on_rating.json",
+      "name": "ev-charging-on_rating"
+    }
+  }
+}

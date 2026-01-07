@@ -1,0 +1,8 @@
+{
+  "method": "GET",
+  "endpoint": "/schemas/ev-charging-support",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}
+

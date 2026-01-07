@@ -1,0 +1,17 @@
+{
+  "result": {
+    "context": {
+      "version": "2.0.0",
+      "action": "support",
+      "domain": "beckn.one:deg:ev-charging"
+    },
+    "message": {
+      "refId": "order-001",
+      "support": {
+        "name": "Ravi Kumar",
+        "phone": "+91-9876543210"
+      }
+    }
+  },
+  "schema_used": "ev-charging-support"
+}

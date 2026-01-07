@@ -1,0 +1,32 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "schema.context.version": "2.0.0",
+      "schema.context.action": "on_catalog_publish",
+      "schema.context.domain": "beckn.one:deg:ev-charging",
+      "schema.context.timestamp": "2025-10-14T07:32:05Z",
+      "schema.context.message_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "schema.context.bpp_id": "discovery-indexer.example.com",
+      "schema.context.bpp_uri": "https://discovery-indexer.example.com",
+      "schema.context.ttl": "PT30S",
+      "schema.message.results[0].catalog_id": "catalog-ev-charging-001",
+      "schema.message.results[0].status": "ACCEPTED",
+      "schema.message.results[0].item_count": 42,
+      "schema.message.results[0].warnings[0].code": "NON_NORMALIZED_BRAND",
+      "schema.message.results[0].warnings[0].message": "Some brand values were normalized",
+      "schema.message.results[1].catalog_id": "catalog-ev-charging-002",
+      "schema.message.results[1].status": "REJECTED",
+      "schema.message.results[1].error.code": "INVALID_ITEM",
+      "schema.message.results[1].error.message": "Invalid item payload at index 3",
+      "schema.message.results[1].error.paths": "catalogs[1].items[3]",
+      "path": "Example-schemas/22_on_publish/ev-charging-catalog-on_publish.json",
+      "name": "ev-charging-catalog-on_publish"
+    }
+  }
+}

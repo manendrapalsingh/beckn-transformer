@@ -1,0 +1,28 @@
+{
+  "method": "POST",
+  "endpoint": "/transform",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "data": {
+      "context.version": "2.0.0",
+      "context.action": "discover",
+      "context.domain": "beckn.one:deg:ev-charging",
+      "context.bap_id": "example-bap.com",
+      "context.bap_uri": "https://api.example-bap.com/pilot/bap/energy/v2",
+      "context.transaction_id": "2b4d69aa-22e4-4c78-9f56-5a7b9e2b2002",
+      "context.message_id": "a1eabf26-29f5-4a01-9d4e-4c5c9d1a3d02",
+      "context.timestamp": "2025-01-27T10:00:00Z",
+      "context.ttl": "PT30S",
+      "message.text_search": "EV charger fast charging",
+      "message.spatial[0].op": "s_dwithin",
+      "message.spatial[0].targets": "$['beckn:availableAt'][*]['geo']",
+      "message.spatial[0].geometry.type": "Point",
+      "message.spatial[0].geometry.coordinates[0]": 77.5946,
+      "message.spatial[0].geometry.coordinates[1]": 12.9716,
+      "message.spatial[0].distanceMeters": 5000
+    }
+  }
+}
+
